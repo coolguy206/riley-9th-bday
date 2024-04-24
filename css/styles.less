@@ -1,0 +1,172 @@
+@font-face {
+  font-family: fortnite;
+  src: url(../font/Fortnite.ttf);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../images/splatter.png"), linear-gradient(#2A095F, #E25BFF, #FBEFFF, #E25BFF, #2A095F);
+  background-size: 36%;
+  background-position: center center;
+  padding: 2vw;
+}
+
+h1,
+h2 {
+  @media screen and (max-width: 834px) {
+    font-size: 7vw;
+  }
+
+  font-family: fortnite;
+  font-size: 1.5vw;
+  font-weight: normal;
+}
+
+.wrapper {
+  @media screen and (max-width: 834px) {
+    flex-wrap: wrap;
+  }
+
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 4vw;
+
+
+  section {
+
+    &.first,
+    &.second,
+    &.third {
+      flex-basis: 33%;
+      position: relative;
+    }
+
+    &.first {
+      @media screen and (max-width: 834px) {
+        display: none;
+      }
+
+      img {
+        position: relative;
+        bottom: 0;
+        right: -13vw;
+        z-index: 99;
+      }
+    }
+
+    &.third {
+      @media screen and (max-width: 834px) {
+        flex-basis: 100%;
+        margin: 5vw 0 0;
+        display: flex;
+      }
+
+      img {
+        @media screen and (max-width: 834px) {
+          left: 0;
+        }
+
+        position: relative;
+        bottom: 0;
+        left: -8vw;
+        z-index: 99;
+
+        &.group_2 {
+          @media screen and (max-width: 834px) {
+            left: 6%;
+            width: 50%;
+          }
+        }
+
+        &.group_1 {
+          @media screen and (max-width: 834px) {
+            left: -4%;
+            width: 50%;
+            display: inline;
+          }
+          display:none;
+        }
+      }
+    }
+
+    &.second {
+      @media screen and (max-width: 834px) {
+        flex-basis: 100%;
+        padding: 4vw;
+      }
+
+      text-align: center;
+      border: 10px solid #000;
+      background: #fff;
+      position: relative;
+
+      img {
+        &.top {
+          @media screen and (max-width: 834px) {
+            width: 21vw;
+            top: -5%;
+          }
+
+          position: absolute;
+          top: -9%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 8vw;
+        }
+
+        &.pinata {
+          @media screen and (max-width: 834px) {
+            width: 46vw;
+          }
+
+          width: 17vw;
+        }
+
+        &.bottom {
+          @media screen and (max-width: 834px) {
+            bottom: -16%;
+            width: 25vw;
+            z-index: 999;
+          }
+
+          position: absolute;
+          bottom: -12%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 9.4vw;
+        }
+      }
+
+      .the-content {
+        @media screen and (max-width: 834px) {
+          position: relative;
+          width: 100%;
+          top: 0;
+          left: 0;
+          height: 100%;
+          transform: translate(0, 0);
+        }
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        div[data-tf-live="01HW7213ZRBMTWAQCRNTCPHXKW"] {
+          button {
+            border: 4px solid #2A095F !important;
+            -webkit-text-stroke: 1px #2A095F !important;
+          }
+        }
+      }
+    }
+  }
+}
